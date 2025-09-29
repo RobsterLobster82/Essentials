@@ -1086,6 +1086,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!4 &279390828 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6952884664643318153, guid: f7f0c00bea123a84f8ffc3241c1d5e2d, type: 3}
+  m_PrefabInstance: {fileID: 1781913366}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &339349528
 GameObject:
   m_ObjectHideFlags: 0
@@ -1400,6 +1405,7 @@ Transform:
   m_Children:
   - {fileID: 1817687100}
   - {fileID: 1999728591}
+  - {fileID: 279390828}
   - {fileID: 1266855572}
   - {fileID: 706637823}
   - {fileID: 2041058474}
@@ -4338,7 +4344,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 524799469}
     m_Modifications:
     - target: {fileID: 372819637646940382, guid: f7f0c00bea123a84f8ffc3241c1d5e2d, type: 3}
       propertyPath: m_Name
@@ -4346,11 +4352,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6952884664643318153, guid: f7f0c00bea123a84f8ffc3241c1d5e2d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.6
+      value: 1.34319
       objectReference: {fileID: 0}
     - target: {fileID: 6952884664643318153, guid: f7f0c00bea123a84f8ffc3241c1d5e2d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.5
+      value: 1.4612501
       objectReference: {fileID: 0}
     - target: {fileID: 6952884664643318153, guid: f7f0c00bea123a84f8ffc3241c1d5e2d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5229,4 +5235,3 @@ SceneRoots:
   - {fileID: 821900803}
   - {fileID: 3612873440017427841}
   - {fileID: 5086299502871996142}
-  - {fileID: 1781913366}
