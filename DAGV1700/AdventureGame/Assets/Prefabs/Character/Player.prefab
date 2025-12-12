@@ -100,6 +100,7 @@ GameObject:
   - component: {fileID: 1272844886008264589}
   - component: {fileID: 2533693187207760079}
   - component: {fileID: 5257410316564009997}
+  - component: {fileID: 8390208018954698426}
   m_Layer: 3
   m_Name: Art
   m_TagString: Untagged
@@ -231,6 +232,19 @@ MonoBehaviour:
   key2: 276
   direction1: 0
   direction2: 180
+--- !u!114 &8390208018954698426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6680107428172459137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b58e542e4e133483ca34f3afb817f460, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 0}
 --- !u!1 &8690802360373387024
 GameObject:
   m_ObjectHideFlags: 0
