@@ -23,6 +23,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/PauseMenu.unity
     guid: 3d99136f47ce472468c01d1636bc427f
+  - enabled: 1
+    path: Assets/GameWin.unity
+    guid: 0ca274885a6a372468105f5dcbbfaf2a
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
