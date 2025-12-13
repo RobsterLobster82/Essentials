@@ -3762,6 +3762,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &239686242 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6680107428172459137, guid: eb707950bfd1f374ebe73d05a3f3e4ed, type: 3}
+  m_PrefabInstance: {fileID: 2460219266493674208}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &239686248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239686242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9914d55c3075a4b14a80c1204e72e335, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key1: 275
+  key2: 276
+  direction1: 0
+  direction2: 180
 --- !u!1 &244134266
 GameObject:
   m_ObjectHideFlags: 0
@@ -35862,8 +35883,8 @@ Transform:
   m_GameObject: {fileID: 2096844749}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.84, y: -4.1, z: 0}
-  m_LocalScale: {x: 2.5342588, y: 1, z: 0.2}
+  m_LocalPosition: {x: 2.75, y: -4.1, z: 0}
+  m_LocalScale: {x: 1.7310276, y: 1, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -37091,7 +37112,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2517040033531944059, guid: eb707950bfd1f374ebe73d05a3f3e4ed, type: 3}
+    - {fileID: 7889603848900202630, guid: eb707950bfd1f374ebe73d05a3f3e4ed, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -37101,6 +37124,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8690802360373387024, guid: eb707950bfd1f374ebe73d05a3f3e4ed, type: 3}
       insertIndex: -1
       addedObject: {fileID: 821900813}
+    - targetCorrespondingSourceObject: {fileID: 6680107428172459137, guid: eb707950bfd1f374ebe73d05a3f3e4ed, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 239686248}
   m_SourcePrefab: {fileID: 100100000, guid: eb707950bfd1f374ebe73d05a3f3e4ed, type: 3}
 --- !u!1001 &3612873440017427841
 PrefabInstance:
