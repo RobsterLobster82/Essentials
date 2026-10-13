@@ -6715,6 +6715,66 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1920137252188784506, guid: 9217664731eea0d4dbdd48b88524a74a, type: 3}
+      propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1920137252188784506, guid: 9217664731eea0d4dbdd48b88524a74a, type: 3}
+      propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1920137252188784506, guid: 9217664731eea0d4dbdd48b88524a74a, type: 3}
+      propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1920137252188784506, guid: 9217664731eea0d4dbdd48b88524a74a, type: 3}
+      propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 11400000, guid: 115ed5062b2d77b41a9ac209b578cc12, type: 2}
+    - target: {fileID: 1920137252188784506, guid: 9217664731eea0d4dbdd48b88524a74a, type: 3}
+      propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1805027650}
+    - target: {fileID: 1920137252188784506, guid: 9217664731eea0d4dbdd48b88524a74a, type: 3}
+      propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1920137252188784506, guid: 9217664731eea0d4dbdd48b88524a74a, type: 3}
+      propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1920137252188784506, guid: 9217664731eea0d4dbdd48b88524a74a, type: 3}
+      propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: UpdateValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1920137252188784506, guid: 9217664731eea0d4dbdd48b88524a74a, type: 3}
+      propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: UpdateWithFloatData
+      objectReference: {fileID: 0}
+    - target: {fileID: 1920137252188784506, guid: 9217664731eea0d4dbdd48b88524a74a, type: 3}
+      propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: SimpleFloatData, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1920137252188784506, guid: 9217664731eea0d4dbdd48b88524a74a, type: 3}
+      propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: SimpleImageBehaviour, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1920137252188784506, guid: 9217664731eea0d4dbdd48b88524a74a, type: 3}
+      propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_FloatArgument
+      value: -0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1920137252188784506, guid: 9217664731eea0d4dbdd48b88524a74a, type: 3}
+      propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_FloatArgument
+      value: -0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1920137252188784506, guid: 9217664731eea0d4dbdd48b88524a74a, type: 3}
+      propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1920137252188784506, guid: 9217664731eea0d4dbdd48b88524a74a, type: 3}
+      propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 9045054495909605679, guid: 9217664731eea0d4dbdd48b88524a74a, type: 3}
       propertyPath: m_Name
       value: Falling Rock
