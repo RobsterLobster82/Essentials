@@ -45,7 +45,7 @@ workspace -fr "translatorData" "data";
 workspace -fr "mel" "scripts";
 workspace -fr "particles" "cache/particles";
 workspace -fr "DXF_ATF" "";
-workspace -fr "scene" "scenes";
+workspace -fr "scene" "scenes/2026FallSemester";
 workspace -fr "USD Export" "data";
 workspace -fr "mayaLT" "";
 workspace -fr "SAT_ATF" "";
