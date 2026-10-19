@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: unit1BouncingBall.ma
-//Last modified: Mon, Oct 19, 2026 05:28:28 PM
+//Last modified: Mon, Oct 19, 2026 05:34:15 PM
 //Codeset: 1252
 requires maya "2025ff03";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiImagerDenoiserOidn"
@@ -11,21 +11,20 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202505300603-a12e894a3d";
 fileInfo "osv" "Windows 11 Pro v2009 (Build: 26200)";
-fileInfo "UUID" "F99576DA-4BC6-9482-B2F2-9D984A3768E2";
+fileInfo "UUID" "E489372B-4E33-F792-41B6-2C9C738D5BE0";
 createNode transform -s -n "persp";
 	rename -uid "627D76F9-481C-726D-206A-588C877FE0B5";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 5.4334874311347683 3.1538738612264816 -0.97763889625099321 ;
-	setAttr ".r" -type "double3" -29.738352729601921 100.19999999999918 0 ;
+	setAttr ".t" -type "double3" -3.029821516735788 1.894965142756643 3.0954559214313759 ;
+	setAttr ".r" -type "double3" -26.738352729605271 -46.600000000001089 2.3145193526657733e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "39D6B706-4EC1-2DEB-7D12-2ABE8B6D892B";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 6.3581038646834749;
+	setAttr ".coi" 4.6511303145137859;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" -1.1920928955078125e-07 0 -1.7881393432617188e-07 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "8EA29EE6-47A2-61A6-04D8-04B0ED42E3B9";
@@ -77,13 +76,14 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".hc" -type "string" "viewSet -s %camera";
 	setAttr ".o" yes;
 	setAttr ".ai_translator" -type "string" "orthographic";
-createNode transform -n "pSphere1";
-	rename -uid "475DBA09-4F21-E9FC-B1E8-03BB3A57778E";
-createNode mesh -n "pSphereShape1" -p "pSphere1";
-	rename -uid "1A5A8B83-4E49-1C65-B72B-828B82A9D6FB";
+createNode transform -n "pCube1";
+	rename -uid "B2B8C548-4087-D8EA-1C49-D1B72AE65DFA";
+createNode mesh -n "pCubeShape1" -p "pCube1";
+	rename -uid "20BB50BA-42A2-51FD-EA81-00816A6794BE";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.5 0.375 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
@@ -122,8 +122,6 @@ createNode aiAOVDriver -s -n "defaultArnoldDisplayDriver";
 	setAttr ".output_mode" 0;
 createNode aiImagerDenoiserOidn -s -n "defaultArnoldDenoiser";
 	rename -uid "56E21910-4905-6A9E-53C7-94962D5DB789";
-createNode polySphere -n "polySphere1";
-	rename -uid "9DE9C29F-41A7-4EB4-4681-9EA65621F2CE";
 createNode script -n "uiConfigurationScriptNode";
 	rename -uid "DB0D7A04-46E2-A480-B852-F0A69CBF52C7";
 	setAttr ".b" -type "string" (
@@ -171,6 +169,9 @@ createNode script -n "sceneConfigurationScriptNode";
 	rename -uid "693FB405-4B8E-2448-D93C-D98049064BDB";
 	setAttr ".b" -type "string" "playbackOptions -min 1 -max 120 -ast 1 -aet 200 ";
 	setAttr ".st" 6;
+createNode polyCube -n "polyCube1";
+	rename -uid "46B441EE-4AA9-C6E6-3FCC-5EBE0D9FE8E5";
+	setAttr ".cuv" 4;
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -214,7 +215,7 @@ select -ne :defaultColorMgtGlobals;
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
-connectAttr "polySphere1.out" "pSphereShape1.i";
+connectAttr "polyCube1.out" "pCubeShape1.i";
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
@@ -228,5 +229,5 @@ connectAttr ":defaultArnoldDisplayDriver.msg" ":defaultArnoldRenderOptions.drive
 connectAttr ":defaultArnoldFilter.msg" ":defaultArnoldRenderOptions.filt";
 connectAttr ":defaultArnoldDriver.msg" ":defaultArnoldRenderOptions.drvr";
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
-connectAttr "pSphereShape1.iog" ":initialShadingGroup.dsm" -na;
+connectAttr "pCubeShape1.iog" ":initialShadingGroup.dsm" -na;
 // End of unit1BouncingBall.ma
