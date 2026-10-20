@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: unit1BouncingBall.ma
-//Last modified: Mon, Oct 19, 2026 06:00:47 PM
+//Last modified: Mon, Oct 19, 2026 06:13:49 PM
 //Codeset: 1252
 requires maya "2025ff03";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiImagerDenoiserOidn"
@@ -11,7 +11,7 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202505300603-a12e894a3d";
 fileInfo "osv" "Windows 11 Pro v2009 (Build: 26200)";
-fileInfo "UUID" "10E5CD8C-4179-67D8-C3E1-B9B092F21B86";
+fileInfo "UUID" "711EAB47-4A9D-5C06-E7B3-6780E8C32E7D";
 createNode transform -s -n "persp";
 	rename -uid "627D76F9-481C-726D-206A-588C877FE0B5";
 	setAttr ".v" no;
@@ -251,8 +251,10 @@ createNode animCurveTA -n "Ball_rotateZ";
 	setAttr ".wgt" no;
 	setAttr -s 2 ".ktv[0:1]"  1 0 25 0;
 select -ne :time1;
-	setAttr ".o" 6;
-	setAttr ".unw" 6;
+	setAttr ".o" 13;
+	setAttr ".unw" 13;
+select -ne :sequenceManager1;
+	setAttr ".o" 25;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
