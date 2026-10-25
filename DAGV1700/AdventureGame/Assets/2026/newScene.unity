@@ -7526,31 +7526,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6568657660520761218, guid: 197f346cb13bdbb4e98b20c472594fd0, type: 3}
       propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6568657660520761218, guid: 197f346cb13bdbb4e98b20c472594fd0, type: 3}
       propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6568657660520761218, guid: 197f346cb13bdbb4e98b20c472594fd0, type: 3}
       propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 24100000, guid: 51e0ad00a2cc91449808b36017cd669a, type: 2}
     - target: {fileID: 6568657660520761218, guid: 197f346cb13bdbb4e98b20c472594fd0, type: 3}
       propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6568657660520761218, guid: 197f346cb13bdbb4e98b20c472594fd0, type: 3}
       propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: Play
+      value: set_TargetSnapshot
       objectReference: {fileID: 0}
     - target: {fileID: 6568657660520761218, guid: 197f346cb13bdbb4e98b20c472594fd0, type: 3}
       propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: UnityEngine.AudioSource, UnityEngine
+      value: UnityEditor.Audio.AudioMixerController, UnityEditor.CoreModule
       objectReference: {fileID: 0}
     - target: {fileID: 6568657660520761218, guid: 197f346cb13bdbb4e98b20c472594fd0, type: 3}
+      propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: -8618663113107407639, guid: 51e0ad00a2cc91449808b36017cd669a, type: 2}
+    - target: {fileID: 6568657660520761218, guid: 197f346cb13bdbb4e98b20c472594fd0, type: 3}
       propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
+      value: UnityEditor.Audio.AudioMixerSnapshotController, UnityEditor.CoreModule
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
