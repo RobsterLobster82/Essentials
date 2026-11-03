@@ -26,6 +26,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/GameWin.unity
     guid: 0ca274885a6a372468105f5dcbbfaf2a
+  - enabled: 1
+    path: Assets/2026/newStartMenu.unity
+    guid: 9b410a46f57cab340a357c31bb4c47da
+  - enabled: 1
+    path: Assets/2026/newScene.unity
+    guid: 6926f29ba08eb5e44a29fe0af0cb0a33
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
